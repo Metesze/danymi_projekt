@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Map</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" id="homeLink">Home</a></li>
+                <li><a href="#" id="weatherLink">Weather Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <div id="mapid"></div>
+        <div id="weatherForm" style="display: none;">
+            <h2>Weather Search</h2>
+            <form id="cityForm">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <button type="submit">Search</button>
+            </form>
+            <div id="weatherResults"></div> 
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
